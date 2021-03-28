@@ -1,0 +1,31 @@
+{
+    "theme_color": "#50504d",
+    "background_color": "#50504d",
+    "display": "standalone",
+    "scope": ".",
+    "start_url": ".",
+    "name": "Dhyan Patel IT202 Project 2",
+    "short_name": "IT202-Proj2",
+    "icons": [
+        {
+            "src": "static/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "static/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "static/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "static/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
