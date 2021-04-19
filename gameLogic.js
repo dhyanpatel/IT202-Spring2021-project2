@@ -98,6 +98,21 @@ playerObject.img.src = 'static/nemo.png'
 
 let time = 0
 
+function tiltHandler(e) {
+    curTilt = e.beta
+    if (e.beta < 35)
+        playerObject.y += 15
+    else if (e.beta > 65)
+        playerObject.y -= 15
+
+}
+
+canvas.width = window.innerWidth
+if ("DeviceOrientationEvent" in window && isMobile) {
+    window.addEventListener('deviceorientation', tiltHandler, false)
+    canvas.height = window.innerHeight
+}
+
 function main() {
     time++
     draw()
@@ -112,6 +127,8 @@ document.addEventListener("keydown", (event) => {
         playerObject.y += 15
     }
 })
+
+document.addEventListener("tilt")
 
 function Shark(height) {
     this.image = new Image()

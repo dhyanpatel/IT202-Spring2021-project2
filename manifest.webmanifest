@@ -6,6 +6,7 @@
     "start_url": ".",
     "name": "Dhyan Patel IT202 Project 2",
     "short_name": "IT202-Proj2",
+    "orientation": "landscape",
     "icons": [
         {
             "src": "static/icon-192x192.png",
