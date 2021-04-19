@@ -99,12 +99,10 @@ playerObject.img.src = 'static/nemo.png'
 let time = 0
 
 function tiltHandler(e) {
-    curTilt = e.beta
     if (e.beta < 35)
         playerObject.y += 15
     else if (e.beta > 65)
         playerObject.y -= 15
-
 }
 
 canvas.width = window.innerWidth
